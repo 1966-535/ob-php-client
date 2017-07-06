@@ -4,19 +4,28 @@
     "description": "Sweet API client",
     "homepage": "https://github.com/MetuMaribe/sweetapi-php-client",
     "keywords": ["github", "gh", "api", "gist"],
-    "license": "APACHE2",
+    "support": {
+        "issues": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/issues",
+        "docs": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/"
+    },
+    "license": "APACHE-2",
     "authors": [
         {
             "name": "Obinna Merenu",
-            "homepage": "http://github.com"
+            "homepage": "http://github.com/MetuMaribe/sweetapi-php-client"
         }
     ],
     "require": {
         "php": "^5.5 || ^7.0",
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.0 || ^5.5",
+        "phpunit/phpunit": "^5.0 || ^6.0",
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }
