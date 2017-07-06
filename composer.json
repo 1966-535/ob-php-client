@@ -1,14 +1,14 @@
 {
     "name": "MetuMaribe/sweetapi-php-client",
     "type": "library",
-    "description": "Sweet API client",
+    "description": "Unofficial: Sweet API client",
     "homepage": "https://github.com/MetuMaribe/sweetapi-php-client",
     "keywords": ["github", "sweet", "api", "sweetapi"],
     "support": {
         "issues": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/issues",
         "docs": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/"
     },
-    "license": "APACHE-2",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Obinna Merenu",
