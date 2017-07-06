@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Sweet API client",
     "homepage": "https://github.com/MetuMaribe/sweetapi-php-client",
-    "keywords": ["github", "gh", "api", "gist"],
+    "keywords": ["github", "sweet", "api", "sweetapi"],
     "support": {
         "issues": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/issues",
         "docs": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/"
