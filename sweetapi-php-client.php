@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Class sweetClient
+ * @package Sclient
+ * @author Obinna Merenu <http://github.com/unerem>
+ * @link  https://github.com/Metumaribe/sweetapi-php-client
+ */
+namespace Sclient;
+
 // GET http://swiq3.com:8080/locations?apikey=YOUR_API_KEY&client_id=YOUR_CLIENT_ID
 
 class sweetClient {
