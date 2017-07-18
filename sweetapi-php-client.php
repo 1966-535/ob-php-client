@@ -1,14 +1,11 @@
 <?php
 
-namespace Sclient;
 /**
  * Class sweetClient
  * @package Sclient
  * @author Obinna Merenu <http://github.com/unerem>
  * @link  https://github.com/Metumaribe/sweetapi-php-client
  */
-
-// GET http://swiq3.com:8080/locations?apikey=YOUR_API_KEY&client_id=YOUR_CLIENT_ID
 
 class sweetClient {
   public $handle;
@@ -22,14 +19,14 @@ class sweetClient {
    */
   function __construct() {
     $this->http_options = [];
-    
-// @todo 
+
+// @todo
 // curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 // curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
     $this->http_options[CURLOPT_RETURNTRANSFER] = true;
     $this->http_options[CURLOPT_FOLLOWLOCATION] = false;
   }
-  
+
   /**
    * Perform a GET call to server
    *
@@ -50,9 +47,10 @@ class sweetClient {
     $this->response_object = curl_exec($this->handle);
     $this->_http_parse_message($this->response_object);
     curl_close($this->handle);
+    echo $this->response_object; // remove this echo @todo
     return $this->response_object;
   }
- 
+
   /**
    * Response handler.
    *
@@ -79,3 +77,22 @@ class sweetClient {
     }
   }
 }
+
+/**
+ *
+ * Class HttpServerException, HttpServerException404,
+ * and RestClientException
+ */
+class HttpServerException extends Exception {
+}
+class HttpServerException404 extends Exception {
+  function __construct($message = 'Not Found') {
+    parent::__construct($message, 404);
+  }
+}
+class RestClientException extends Exception {
+}
+
+// @todo remove below calls
+// $call = new sweetClient();
+// $call->get(url);
