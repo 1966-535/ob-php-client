@@ -47,8 +47,9 @@ class sweetClient {
     $this->response_object = curl_exec($this->handle);
     $this->_http_parse_message($this->response_object);
     curl_close($this->handle);
-    echo $this->response_object; // remove this echo @todo
-    return $this->response_object;
+    
+    // decode json to array
+    return json_decode($this->response_object , TRUE);
   }
 
   /**
