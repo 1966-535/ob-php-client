@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Class sweetClient
+ * Class obClient
  * @package Sclient
  * @author Obinna Merenu <http://github.com/unerem>
  * @link  https://github.com/Metumaribe/sweetapi-php-client
  */
 
-class sweetClient {
+class obClient {
   public $handle;
   public $http_options;
   public $response_object;
@@ -95,5 +95,5 @@ class RestClientException extends Exception {
 }
 
 // @todo remove below calls
-// $call = new sweetClient();
+// $call = new obClient();
 // $call->get(url);
