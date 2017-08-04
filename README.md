@@ -7,11 +7,11 @@ Unofficial client library
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/MetuMaribe/sweetapi-php-client"
+            "url": "https://github.com/metumaribe/ob-php-client"
         }
     ],
     "require": {
-        "MetuMaribe/sweetapi-php-client": "dev-master"
+        "metumaribe/ob-php-client": "dev-master"
     }
 }
 ```
