@@ -61,20 +61,24 @@ class obClient {
    */
   private function _http_parse_message($res) {
     if(! $res){
-      throw new HttpServerException(curl_error($this->handle), -1);
+      echo curl_error($this->handle);
+      exit;
     }
     $this->response_info = curl_getinfo($this->handle);
     $code = $this->response_info['http_code'];
     if($code == 404) {
-      throw new HttpServerException404(curl_error($this->handle));
+      echo curl_error($this->handle);
+      exit;
     }
     if($code >= 400 && $code <=600) {
-      throw new HttpServerException('Server response status was: ' . $code .
-        ' with response: [' . $res . ']', $code);
+      print_r('Server response status was: ' . $code .
+        ' with response: [' . $res . ']' )  ;
+        exit;
     }
     if(!in_array($code, range(200,207))) {
-      throw new HttpServerException('Server response status was: ' . $code .
-        ' with response: [' . $res . ']', $code);
+      echo 'Server response status was: ' . $code .
+        ' with response: [' . $res . ']';
+        exit;
     }
   }
 }
