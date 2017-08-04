@@ -5,14 +5,14 @@
     "homepage": "https://github.com/MetuMaribe/sweetapi-php-client",
     "keywords": ["github", "sweet", "api", "sweetapi"],
     "support": {
-        "issues": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/issues",
-        "docs": "https://github.com/github.com/MetuMaribe/sweetapi-php-client/"
+        "issues": "https://github.com/metumaribe/ob-php-client/issues",
+        "docs": "https://github.com/metumaribe/ob-php-client/"
     },
     "license": "Apache-2.0",
     "authors": [
         {
             "name": "Obinna Merenu",
-            "homepage": "http://github.com/MetuMaribe/sweetapi-php-client"
+            "homepage": "https://github.com/metumaribe/ob-php-client"
         }
     ],
     "require": {
