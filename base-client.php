@@ -1,6 +1,6 @@
 <?php
 
-// this file does nothing at the moment.
+// this file is not in use atm. @todo: extend this.
 
 class Client {
   public $handle;
