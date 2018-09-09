@@ -1,4 +1,4 @@
-# sweetapi-php-client
+#php-client
 Unofficial client library
 
 ## install as composer dependency
